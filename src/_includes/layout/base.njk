@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ title }}</title>
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta name="author" content="shiftforward.io"/>
+    <meta name="title" content="{{ metaTitle }}"/>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"/>
+    <link
+      id="googleFonts"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CCormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"/>
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/animate/animate.compat.css"/>
+    <link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/locomotive-scroll/locomotive-scroll.min.css"/>
+    <link rel="stylesheet" href="/assets/css/theme.css"/>
+    <link rel="stylesheet" href="/assets/css/theme-elements.css"/>
+    <link rel="stylesheet" href="/assets/css/theme-blog.css"/>
+    <link rel="stylesheet" href="/assets/css/theme-shop.css"/>
+    <link rel="stylesheet" href="/assets/css/demos/demo-creative-agency-1.css"/>
+    <link id="skinCSS" rel="stylesheet" href="/assets/css/skins/skin-creative-agency-1.css"/>
+    <link rel="stylesheet" href="/assets/css/custom.css"/>
+  </head>
+  <body>
+    <div class="body">
+      <div role="main" class="main">
+        <div data-scroll-container class="smoothScroll">
+          <div class="d-xl-flex flex-row p-relative w-100" id="home">
+            {% block content %}
+              {% include "partials/nav.njk" %}
+              {% include "partials/hero.njk" %}
+              {% include "partials/about.njk" %}
+              {% include "partials/services.njk" %}
+              {% include "partials/contact.njk" %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/vendor/plugins/js/plugins.min.js"></script>
+    <script src="/assets/vendor/gsap/gsap.min.js"></script>
+    <script src="/assets/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script src="/assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/demos/demo-creative-agency-1.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/theme.init.js"></script>
+  </body>
+</html>

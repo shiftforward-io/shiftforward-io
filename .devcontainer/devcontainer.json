@@ -1,0 +1,17 @@
+{
+	"name": "Shiftforward-IO",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eseom.nunjucks-template",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+}

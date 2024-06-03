@@ -1,0 +1,52 @@
+{
+  "title": "Areas of Expertise",
+  "description": "Transforming Businesses with Microsoft Dynamics 365, Salesforce, Shopify, and Custom Web Apps.",
+  "contactLinkText": "Contact Us",
+  "services": [
+    {
+      "icon": "/assets/img/demos/creative-agency-1/icons/icon-1.svg",
+      "title": "Microsoft Dynamics 365",
+      "description": "Implement, customize, and integrate Microsoft Dynamics 365 to streamline your business operations.",
+      "details": [
+        "Implementation",
+        "Customization",
+        "Integration",
+        "Support"
+      ]
+    },
+    {
+      "icon": "/assets/img/demos/creative-agency-1/icons/icon-2.svg",
+      "title": "Salesforce",
+      "description": "Optimize your customer relationship management with our expert Salesforce services.",
+      "details": [
+        "Setup",
+        "Customization",
+        "CRM Optimization",
+        "Support"
+      ]
+    },
+    {
+      "icon": "/assets/img/demos/creative-agency-1/icons/icon-3.svg",
+      "title": "Shopify",
+      "description": "Build and customize your online store with our comprehensive Shopify services.",
+      "details": [
+        "Store Setup",
+        "Customization",
+        "Theme Development",
+        "Maintenance"
+      ]
+    },
+    {
+      "icon": "/assets/img/demos/creative-agency-1/icons/icon-4.svg",
+      "title": "Web Apps",
+      "description": "Develop custom web applications tailored to your business needs.",
+      "details": [
+        "Custom Development",
+        "UX/UI Design",
+        "Integration",
+        "Maintenance",
+        "Support"
+      ]
+    }
+  ]
+}
