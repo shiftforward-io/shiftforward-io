@@ -4,7 +4,7 @@
   "contactLinkText": "Contact Us",
   "services": [
     {
-      "icon": "/assets/img/demos/creative-agency-1/icons/icon-1.svg",
+      "icon": "/assets/img/icons/ms-dynamics-365.svg",
       "title": "Microsoft Dynamics 365",
       "description": "Implement, customize, and integrate Microsoft Dynamics 365 to streamline your business operations.",
       "details": [
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "icon": "/assets/img/demos/creative-agency-1/icons/icon-2.svg",
+      "icon": "/assets/img/icons/salesforce.svg",
       "title": "Salesforce",
       "description": "Optimize your customer relationship management with our expert Salesforce services.",
       "details": [
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "icon": "/assets/img/demos/creative-agency-1/icons/icon-3.svg",
+      "icon": "/assets/img/icons/shopify.svg",
       "title": "Shopify",
       "description": "Build and customize your online store with our comprehensive Shopify services.",
       "details": [
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "icon": "/assets/img/demos/creative-agency-1/icons/icon-4.svg",
+      "icon": "/assets/img/icons/webapp.svg",
       "title": "Web Apps",
       "description": "Develop custom web applications tailored to your business needs.",
       "details": [

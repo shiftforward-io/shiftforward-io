@@ -1,6 +1,5 @@
 {
-  "phone": "800 123 4567",
-  "email": "you@domain.com",
-  "address": "12345 Porto Blvd.\nSuite 1500.\nLos Angeles, California 90000",
+  "email": "hi@winfotech.co",
+  "address": "1 Shiv Colony,\nNorth Sunderwas,\nUdaipur, 313001",
   "services": ["Microsoft Dynamics 365", "Salesforce", "Shopify", "Web Apps"]
 }
