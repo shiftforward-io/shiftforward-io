@@ -1,0 +1,42 @@
+<header id="header" data-plugin-options="{'stickyEnabled': false}">
+  <div class="header-body">
+    <div class="header-container container-fluid px-4 py-2">
+      <div class="header-row">
+        <div class="header-column">
+          <div class="header-row">
+            <div class="header-logo">
+              <a href="/">
+                <img alt="logo" width="160" height=70" src="/assets/img/logo/logo-shiftforward.png"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header-column justify-content-end">
+          <div class="header-row p-relative left-10">
+            <div class="header-nav header-nav-links header-nav-light-text order-2 order-lg-1">
+              <div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2
+                  header-nav-main-sub-effect-1">
+                <nav class="collapse">
+                  <ul class="nav nav-pills" id="mainNav">
+                    {% for item in nav %}
+                      <li class="dropdown">
+                        <a href="{{ item.url }}" data-hash class="nav-link">
+                          {{ item.title }}
+                          {% if item.title == "Contact" %}
+                            <span class="btn btn-default text-color-light bg-primary btn-circle border-0 btn-md ms-2">
+                              <i class="fas fa-arrow-right"></i>
+                            </span>
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

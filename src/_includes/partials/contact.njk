@@ -1,0 +1,81 @@
+<section
+  class="d-xl-flex flex-row p-relative vh-xl-100 min-vh-xl-100 justify-content-center align-items-center bg-color-secondary"
+  id="contact">
+  <div class="min-vw-xl-75 custom-ws-initial min-vh-xl-100 d-flex align-items-center p-relative overflow-hidden">
+    <div class="p-absolute custom-el-5">
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-1.6"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-1.3"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-1.0"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.7"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.3"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.0"></span>
+    </div>
+    <div class="p-absolute custom-el-6 d-none d-xl-block">
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.0"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.2"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.4"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.6"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-0.8"></span>
+      <span class="custom-el-4" data-scroll="data-scroll" data-scroll-direction="vertical" data-scroll-speed="-1.0"></span>
+    </div>
+    <div class="p-5 text-color-light w-100 text-center p-relative z-index-1">
+      <div class="container-fluid w-100 mt-5 ms-xl-5">
+        <div class="row mb-4 justify-content-center">
+          <div class="col-12 col-xl-10 text-start">
+            <h2 class="text-color-light">Ready to take action?</h2>
+          </div>
+        </div>
+        <div class="row mb-4 justify-content-center">
+          <div class="col-xl-4 text-start">
+            <h4 class="text-color-light opacity-6 font-weight-normal mb-4">Let’s Talk</h4>
+            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+              <p class="text-3 text-xl-5 text-color-light">
+                <a href="mailto:{{ contact.email }}" class="text-color-light">{{ contact.email }}</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 text-start">
+            <h4 class="text-color-light opacity-6 font-weight-normal mb-4 mt-4 mt-xl-0">Our Services</h4>
+            <ul class="list-unstyled custom-list-1 text-1">
+              {% for item in contact.services %}
+                <li><a href="#services" data-hash>- {{ item }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-xl-3 text-start">
+            <h4 class="text-color-light opacity-6 font-weight-normal mb-4 mt-4 mt-xl-0">Our Location</h4>
+            <ul class="list-unstyled custom-list-1 text-1">
+              {% for line in contact.address.split('\n') %}
+                <li>{{ line }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-4 mt-4 justify-content-center">
+          <div class="col-12 col-xl-5 text-center text-xl-start">
+            <p class="m-0 text-0-5">{{ site.copyright }}</p>
+          </div>
+          <div class="col-12 col-xl-5 text-center text-xl-end pe-5">
+            <ul class="list-inline mt-3 mt-xl-0 mb-0">
+              <li class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
+                <a href="{{ socials.facebook }}" target="_blank" class="text-color-light text-color-hover-primary text-3">
+                  <i class="fab fa-facebook-f text-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
+                <a href="{{ socials.twitter }}" target="_blank" class="text-color-light text-color-hover-primary text-3">
+                  <i class="fab fa-x-twitter text-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
+                <a href="{{ socials.instagram }}" target="_blank" class="text-color-light text-color-hover-primary text-3">
+                  <i class="fab fa-instagram text-3"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
