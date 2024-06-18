@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve"
+    "start": "npm run dev:eleventy",
+    "build": "npm run build:eleventy",
+    "build:eleventy": "npx eleventy",
+    "dev:eleventy": "npx eleventy --serve",
+    "postbuild": "purgecss --css _site/assets/css/*.css --content _site/index.html _site/assets/js/*.js --output _site/assets/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "purgecss": "^6.0.0"
   }
 }
